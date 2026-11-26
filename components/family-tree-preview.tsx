@@ -40,7 +40,7 @@ function PersonNode({ person, root }: { person: Person; root?: boolean }) {
   return (
     <div
       className={cn(
-        'relative rounded-lg border bg-card/90 px-4 py-3 text-center backdrop-blur',
+        'relative rounded-lg border bg-card/90 px-2.5 py-2 text-center backdrop-blur sm:px-4 sm:py-3',
         root
           ? 'border-gold/70 shadow-[0_0_50px_-6px_rgba(212,175,55,0.65)]'
           : 'border-gold/25 shadow-[0_0_24px_-10px_rgba(212,175,55,0.5)]',
@@ -87,12 +87,12 @@ export function FamilyTreePreview() {
 
         <div className="glow-border relative mt-16 rounded-2xl bg-background/60 p-2 backdrop-blur-sm">
           <div
-            className="overflow-x-auto px-4 py-10 [scrollbar-color:rgba(212,175,55,0.4)_transparent] sm:px-8"
+            className="overflow-x-auto px-2 py-10 [scrollbar-color:rgba(212,175,55,0.4)_transparent] sm:px-8"
             tabIndex={0}
             role="region"
             aria-label="Sơ đồ cây gia phả ba đời đầu, có thể cuộn ngang"
           >
-            <div className="lineage-tree mx-auto w-max">
+            <div className="lineage-tree mx-auto w-max max-sm:[zoom:0.62]">
               <ul>
                 <Branch person={tree} root />
               </ul>

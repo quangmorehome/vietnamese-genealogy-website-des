@@ -34,7 +34,7 @@ export function SiteHeader() {
       <nav aria-label="Điều hướng chính" className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:h-20">
         <a href="#" className="flex min-h-11 items-center gap-3" aria-label="Gia Phả Họ Nguyễn Đình — Trang chủ">
           <span className="grid size-9 place-items-center rounded-full border border-gold/50 font-serif text-lg text-gold shadow-[0_0_18px_-4px_rgba(212,175,55,0.7)]">
-            阮
+            N
           </span>
           <span className="font-serif text-xl tracking-wide text-cream">Nguyễn Đình</span>
         </a>
