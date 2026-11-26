@@ -92,7 +92,7 @@ export function FamilyTreePreview() {
             role="region"
             aria-label="Sơ đồ cây gia phả ba đời đầu, có thể cuộn ngang"
           >
-            <div className="lineage-tree mx-auto w-max max-sm:[zoom:0.62]">
+            <div className="lineage-tree mx-auto w-max max-sm:[zoom:0.56]">
               <ul>
                 <Branch person={tree} root />
               </ul>
