@@ -104,7 +104,7 @@ export function FamilyTreePreview() {
               <span className="font-serif text-lg text-gold-soft">+ 1.279</span> hậu duệ qua 11 đời tiếp theo
             </p>
             <a
-              href="#"
+              href="/cay-gia-pha"
               className="inline-flex min-h-11 items-center rounded-full border border-gold/50 px-6 text-sm text-gold-soft transition-all hover:bg-gold/10 hover:shadow-[0_0_24px_-6px_rgba(212,175,55,0.8)]"
             >
               Xem toàn bộ phả hệ

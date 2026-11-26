@@ -14,7 +14,7 @@ export function GoldParticles({
   className?: string
 }) {
   const particles = Array.from({ length: count }, (_, i) => {
-    const size = 1 + seeded(i, 1) * 3
+    const size = Math.round((1 + seeded(i, 1) * 3) * 10) / 10
     return {
       left: `${(seeded(i, 2) * 100).toFixed(2)}%`,
       size,

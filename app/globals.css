@@ -223,6 +223,74 @@
   border-left: 1px solid rgb(212 175 55 / 0.45);
 }
 
+/* Full family tree page connectors (glowing gold) */
+.gt-tree {
+  --line: rgb(212 175 55 / 0.55);
+  --gap: 40px;
+}
+.gt-tree ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: var(--gap);
+}
+.gt-tree > ul {
+  padding-top: 0;
+}
+.gt-tree li {
+  position: relative;
+  list-style: none;
+  padding: var(--gap) 6px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gt-tree li::before,
+.gt-tree li::after,
+.gt-tree ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: var(--gap);
+  filter: drop-shadow(0 0 3px rgb(212 175 55 / 0.7));
+}
+.gt-tree li::before,
+.gt-tree li::after {
+  right: 50%;
+  width: 50%;
+  border-top: 1px solid var(--line);
+}
+.gt-tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 1px solid var(--line);
+}
+.gt-tree > ul > li::before,
+.gt-tree > ul > li::after,
+.gt-tree li:only-child::before,
+.gt-tree li:only-child::after {
+  display: none;
+}
+.gt-tree > ul > li,
+.gt-tree li:only-child {
+  padding-top: 0;
+}
+.gt-tree li:first-child::before,
+.gt-tree li:last-child::after {
+  border: 0 none;
+}
+.gt-tree li:last-child::before {
+  border-right: 1px solid var(--line);
+  border-radius: 0 14px 0 0;
+}
+.gt-tree li:first-child::after {
+  border-radius: 14px 0 0 0;
+}
+.gt-tree ul ul::before {
+  left: 50%;
+  border-left: 1px solid var(--line);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .particle,
   .halo,

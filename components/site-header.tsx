@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 
 const links = [
   { href: '/#to-tien', label: 'Tổ tiên' },
-  { href: '/#cay-gia-pha', label: 'Cây gia phả' },
+  { href: '/cay-gia-pha', label: 'Cây gia phả' },
   { href: '/#lich-su', label: 'Lịch sử dòng họ' },
   { href: '/#tu-duong', label: 'Từ đường' },
 ]
@@ -53,7 +53,7 @@ export function SiteHeader() {
         </ul>
 
         <a
-          href="/#cay-gia-pha"
+          href="/cay-gia-pha"
           className="hidden min-h-11 items-center rounded-full border border-gold/50 px-5 text-sm text-gold-soft transition-all hover:border-gold hover:bg-gold/10 hover:shadow-[0_0_24px_-6px_rgba(212,175,55,0.8)] md:inline-flex"
         >
           Tra cứu gia phả
@@ -87,7 +87,7 @@ export function SiteHeader() {
             ))}
           </ul>
           <a
-            href="/#cay-gia-pha"
+            href="/cay-gia-pha"
             onClick={() => setOpen(false)}
             className="mt-5 flex min-h-12 items-center justify-center rounded-full bg-gold text-sm font-medium text-primary-foreground"
           >
