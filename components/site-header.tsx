@@ -5,10 +5,10 @@ import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const links = [
-  { href: '#to-tien', label: 'Tổ tiên' },
-  { href: '#cay-gia-pha', label: 'Cây gia phả' },
-  { href: '#lich-su', label: 'Lịch sử dòng họ' },
-  { href: '#tu-duong', label: 'Từ đường' },
+  { href: '/#to-tien', label: 'Tổ tiên' },
+  { href: '/#cay-gia-pha', label: 'Cây gia phả' },
+  { href: '/#lich-su', label: 'Lịch sử dòng họ' },
+  { href: '/#tu-duong', label: 'Từ đường' },
 ]
 
 export function SiteHeader() {
@@ -32,7 +32,7 @@ export function SiteHeader() {
       )}
     >
       <nav aria-label="Điều hướng chính" className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:h-20">
-        <a href="#" className="flex min-h-11 items-center gap-3" aria-label="Gia Phả Họ Nguyễn Đình — Trang chủ">
+        <a href="/" className="flex min-h-11 items-center gap-3" aria-label="Gia Phả Họ Nguyễn Đình — Trang chủ">
           <span className="grid size-9 place-items-center rounded-full border border-gold/50 font-serif text-lg text-gold shadow-[0_0_18px_-4px_rgba(212,175,55,0.7)]">
             N
           </span>
@@ -53,7 +53,7 @@ export function SiteHeader() {
         </ul>
 
         <a
-          href="#cay-gia-pha"
+          href="/#cay-gia-pha"
           className="hidden min-h-11 items-center rounded-full border border-gold/50 px-5 text-sm text-gold-soft transition-all hover:border-gold hover:bg-gold/10 hover:shadow-[0_0_24px_-6px_rgba(212,175,55,0.8)] md:inline-flex"
         >
           Tra cứu gia phả
@@ -87,7 +87,7 @@ export function SiteHeader() {
             ))}
           </ul>
           <a
-            href="#cay-gia-pha"
+            href="/#cay-gia-pha"
             onClick={() => setOpen(false)}
             className="mt-5 flex min-h-12 items-center justify-center rounded-full bg-gold text-sm font-medium text-primary-foreground"
           >
